@@ -9,25 +9,24 @@
   <h1>ミツモリAI デモへようこそ！</h1>
   <p>このページにチャットボットが埋め込まれています。</p>
 
-  <!-- ✅ Dify チャット埋め込みスクリプト -->
+  <!-- ✅ Dify チャットボット埋め込み -->
   <script>
     window.difyChatbotConfig = {
-      token: 'I33VE1TzKhzNAP9F',
+      token: "I33VE1TZkhzNAP9F",  // ← Difyのチャットボットトークンを確認・修正
       systemVariables: {}
     };
   </script>
   <script
     src="https://udify.app/embed.min.js"
-    id="I33VE1TzKhzNAP9F"
+    id="I33VE1TZkhzNAP9F"
     defer>
   </script>
 
-  <!-- 任意：チャットUIの見た目調整（色やサイズなど） -->
   <style>
+    /* ✅ チャットUIの見た目カスタマイズ（任意） */
     #dify-chatbot-bubble-button {
-      background-color: #16C4F2 !important;
+      background-color: #1C64F2 !important;
     }
-
     #dify-chatbot-bubble-window {
       width: 24rem !important;
       height: 40rem !important;
