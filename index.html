@@ -1,20 +1,37 @@
 <!DOCTYPE html>
 <html lang="ja">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>ミツモリAI デモ</title>
-  </head>
-  <body>
-    <h1>ミツモリAI デモへようこそ！</h1>
-    <p>このページにチャットボットが埋め込まれています。</p>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ミツモリAI デモ</title>
+</head>
+<body>
+  <h1>ミツモリAI デモへようこそ！</h1>
+  <p>このページにチャットボットが埋め込まれています。</p>
 
-    <!-- iframeでチャットボット表示 -->
-    <iframe
-      src="https://udify.app/chatbot/I33VE1TZkhzNAP9F"
-      width="100%"
-      height="600"
-      style="border: none;">
-    </iframe>
-  </body>
+  <!-- ✅ Dify チャット埋め込みスクリプト -->
+  <script>
+    window.difyChatbotConfig = {
+      token: 'I33VE1TzKhzNAP9F',
+      systemVariables: {}
+    };
+  </script>
+  <script
+    src="https://udify.app/embed.min.js"
+    id="I33VE1TzKhzNAP9F"
+    defer>
+  </script>
+
+  <!-- 任意：チャットUIの見た目調整（色やサイズなど） -->
+  <style>
+    #dify-chatbot-bubble-button {
+      background-color: #16C4F2 !important;
+    }
+
+    #dify-chatbot-bubble-window {
+      width: 24rem !important;
+      height: 40rem !important;
+    }
+  </style>
+</body>
 </html>
